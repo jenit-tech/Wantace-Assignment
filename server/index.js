@@ -18,7 +18,7 @@ app.get('/', (request, response) => {
 app.use('/recipe', recipeRoute);
 
 mongoose
-  .connect('mongodb+srv://jenitjosephjose:r7ALP6C0TaT290Bm@cluster0.ntfhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+  .connect('mongodb+srv://jenitjosephjose:passwordBm@cluster0.ntfhe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {
